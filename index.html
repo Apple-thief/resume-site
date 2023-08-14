@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Ion-icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <title>Resume</title>
+  </head>
+
+  <body class="overflow-x-hidden flex items-center justify-center pt-4">
+    <div class="pdf border-2 border-black" id="pdf">
+      <!-- header -->
+      <header class="px-4 py-2 flex flex-row justify-between">
+        <div class="h-full flex flex-row items-start gap-2">
+          <img
+            class="h-[120px] w-[120px] rounded-full object-cover ring-2 object-[0px,-16px] ring-gray-600"
+            src="./images/aryan-v-s.jpg"
+            alt="profile picture"
+          />
+          <div class="ml-4 p-2">
+            <h1 class="text-3xl font-medium">Soham K Chattopadhyay</h1>
+            <h3 class="text-sm">Software Developer, AI Enthusiast</h3>
+          </div>
+        </div>
+
+        <div class="h-full flex-col flex items-end text-[0.7rem] font-medium px-2">
+          <a class="links" href="mailto:soham.chattopadhyay@gmail.com" target="_blank">
+            <text class="px-2">soham.chattopadhyay@gmail.com</text>
+            <ion-icon name="mail" class="logo"></ion-icon>
+          </a>
+          <p class="links">
+            <text class="px-2">+91 9481454067</text>
+            <ion-icon name="phone-portrait" class="logo"></ion-icon>
+          </p>
+          <p class="links">
+            <text class="px-2">Bangalore, India</text>
+            <ion-icon name="location" class="logo"></ion-icon>
+          </p>
+          <a
+            class="links"
+            href="https://www.linkedin.com/in/soham-chattopadhyay-63535219b/"
+            target="_blank"
+          >
+          <text class="px-2">linkedin.com/in/soham-chattopadhyay-63535219b/</text>
+            <ion-icon name="logo-linkedin" class="logo"></ion-icon>
+          </a>
+          <a class="links" href="https://github.com/Apple-thief" target="_blank">
+            <text class="px-2">github.com/Apple-Thief</text>
+            <ion-icon name="logo-github" class="logo"></ion-icon>
+          </a>
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <div>
+        <p class="text-xs text-center text-gray-800 font-normal px-6 pb-2">
+          I am an energetic trained computer science student, who wishes to explore fulll stack deveopment opportunities. 
+          Current in the prefinal year of engineering education, I am open to learning driven internships where I am able to evlve into 
+          an industrial contributor. Currently working across academic endeavours with BNMIT (VTU), at a personal level, 
+          I identify with the chess grandmaster Hikaru.
+         
+        </p>
+      </div>
+
+      <!-- Main section -->
+      <main class="flex">
+        <!-- Left section -->
+        <section class="flex-1 mr-3">
+          <!-- Initiatives -->
+          <div class="mb-2">
+            <h2 class="heading">Social Activities</h2>
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center mt-1.5">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div class="mb-2">
+                <h3 class="heading2">Reap Benefit<text class="text-gray-500">DPS Bangalore North</text></h3>
+                <p class="subheading">
+                  Student volunteer
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>                  
+                   Technical Team and Problemsetter
+                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                  Technical Head
+                </p>
+                <p class="text-xs text-gray-800">
+                  <ul class="list-disc list-outside px-4">
+                    <!-- <li class="text-xs text-gray-800">
+                      Participated in 50+ CTF competitions of varying difficulties at
+                      intercollegiate, national and international levels with notable rankings
+                      in multiple contests
+                    </li> -->
+                    <li class="text-xs text-gray-800">
+                      #4 ranked CTF team in India on CTFtime.org. Among top 100 globally at peak
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      Created multiple challenges for different CTF formats and helped in
+                      technical aspects of organisation (creating and hosting vulnerable servers
+                      on Google Cloud and CTFd)
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center mt-1.5">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-600 w-0"></div>
+              </div>
+              <div class="mb-2">
+                <h3 class="heading2">Nexus and Alcoding <text class="text-gray-500">PES University</text></h3>
+                <p class="subheading">Technical Head, Technical Team</p>
+                <p class="text-xs text-gray-800">
+                  <ul class="list-disc list-outside px-4">
+                    <li class="text-xs text-gray-800">
+                      Organised competitive programming event with 1000+ participants and multiple
+                      smaller contests
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      Helped students with basics of different contest types/formats and
+                      provided comprehensive resource lists
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Section -->
+          <div class="mb-2">
+            <h2 class="heading">Personal Projects</h2>
+            
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center mt-1.5">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+
+              <div>
+                <h3 class="heading2">Graphics</h3>
+                <!-- <p class="subheading text-xs pb-1 px-1">
+                  C/C++, Boost, GLM, OpenGL, Direct3D, Blender
+                </p> -->
+                <ul class="list-disc list-outside px-4">
+                  <li class="text-xs text-gray-800">
+                    Used libraries and tools like OpenGL, Direct3D, ImGUI, GLM, Boost and Blender
+                    to make games like Chess, PacMan, Snake, DinoJump, etc. Learnt and gained
+                    insights on how modern applications build upon primitive constructs
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    Use of modern C/C++ to implement all core functionalities of the games like
+                    move generation, raytracing and collision detection
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    Implemented algorithm visualizations such as Sorting and Convex Hull
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center mt-1.5">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+
+              <div>
+                <h3 class="heading2">Neural Network Library</h3>
+                <ul class="list-disc list-outside px-4">
+                  <li class="text-xs text-gray-800">
+                    Developed a simple neural network library in C/C++ with an usage API
+                    similar to that of Tensorflow/Pytorch
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    Implemented Stochastic Gradient Descent using feed-forward NNs and backpropagation
+                    as learning technique
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    Accuracy close to Tensorflow when compared using same network structure and similar
+                    parameters for training the network
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center mt-1.5">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div>
+                <h3 class="heading2">Self-Driving Rover</h3>
+                <ul class="list-disc list-outside px-4">
+                  <li class="text-xs text-gray-800">
+                    Used multiple sensors to scan, detect and avoid obstacles while following a specific path
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    Developed using C and controlled using an Arduino
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center mt-1.5">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div>
+                <h3 class="heading2">GameHub</h3>
+                <ul class="list-disc list-outside px-4">
+                  <li class="text-xs text-gray-800">
+                    Developed Backend/Frontend using MERN Stack
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    Developed Chess with graphics, move generation and FEN parsing functionalities
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center mt-1.5">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div>
+                <h3 class="heading2">Miscellaneous</h3>
+                <ul class="list-disc list-outside px-4">
+                  <li class="text-xs text-gray-800">
+                    <b>Blockchain:</b> Developed a simple blockchain frontend to visualize the basics of how it works
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    <b>PESU-Academy Scraper:</b> Notes/Slides scraper for students studying at PESU
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    <b>Knight Bot:</b> Developed a simple Discord Bot with basic logging, moderation and admin functionalities
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right Section -->
+        <section class="flex-1 ml-3">
+          <div class="mb-2">
+            <h2 class="heading">Achievements</h2>
+            <div class="flex flex-col mr-2">
+                <div class="flex-1 ml-2 mt-2">
+                  <h3 class="inversebtn flex justify-center items-center">International</h3>
+                  <ul class="list-disc list-outside px-4">
+                    <li class="text-xs text-gray-800">
+                      1st among Indian Student teams (21st globally) at Hacky Holidays 2022 by Deloitte
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      90th among 4000+ teams at NahamCon CTF 2022
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      18th among 1000+ teams at Digital Overdose 2022
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      6th at Winja CTF Nullcon Berlin 2022
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      Multiple other Top-20/50/100 ranks in CTF events with 1000+ participating teams
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      Qualified to Round 2 in Meta Hacker Cup
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      Best performing team at Google HashCode from university for two consecutive years
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      <a
+                        href="https://www.cloudskillsboost.google/public_profiles/0b6b4fad-db67-48d5-8544-d5a98aa50384"
+                        class="links inline"
+                        target="_blank"
+                      >
+                        Actively took part in Qwiklabs training labs for <u>GCP</u>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex-1 ml-2 mt-2">
+                  <h3 class="inversebtn flex justify-center items-center">National</h3>
+                  <ul class="list-disc list-outside px-4">
+                    <li class="text-xs text-gray-800">
+                      2nd at Cyberchaze 2022 by Schneider Electric
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      20th at national finals in InCTF 2021 by Amrita bi0s
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      10th at Engineer CTF 2022 by NIT Surathkal
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      10th at wtfCTF 2022 by Manipal InfoSec Team
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      14th at Incognito 3.0 IIIT-Lucknow
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      ICPC Regionalist 2022
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex-1 ml-2 mt-2">
+                  <h3 class="inversebtn flex justify-center items-center">Inter/Intra-Collegiate</h3>
+                  <ul class="list-disc list-outside px-4">
+                    <li class="text-xs text-gray-800">
+                      Finsihed among the top 10 in Coding challenge conducted by BMSCE
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      1st at the CTF event of BNMIT TATVA 2023
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      2nd/3rd at Alcoding PESU CP contests 2021
+                      <br/>
+                      1st at Alcoding PESU CP contests 2022
+                    </li>
+                    <li class="text-xs text-gray-800">
+                      1st, 2nd at Analyze Me CP contests by CodeChef PESU 2021
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="mb-2">
+            <h2 class="heading">Tech Stack</h2>
+            <div class="flex flex-col mr-2">
+              <div class="flex-1 ml-2">
+                <h3 class="inversebtn flex justify-center items-center">Languages</h3>
+                <div>
+                  <div class="btn">C++</div>
+                  <div class="btn">C</div>
+                  <div class="btn">Python</div>
+                  <div class="btn">Javascript/Typescript</div>
+                  <div class="btn">HTML</div>
+                  <div class="btn">CSS</div>
+                  <div class="btn">MySQL/SQLite</div>
+                  <div class="btn">Bash</div>
+                  <div class="btn">PHP</div>
+                </div>
+              </div>
+              <div class="flex-1 ml-2">
+                <h3 class="inversebtn flex justify-center items-center">Frameworks, Libraries and Tools</h3>
+                <div>
+                  <div class="btn">OpenGL</div>
+                  <div class="btn">Boost</div>
+                  <div class="btn">GLM</div>
+                  <div class="btn">Git</div>
+                  <div class="btn">Docker</div>
+                  <div class="btn">Tensorflow</div>
+                  <div class="btn">Google/AWS/Azure Cloud</div>
+                  <div class="btn">ImGUI</div>
+                  <div class="btn">MERN</div>
+                  <div class="btn">Tailwind</div>
+                  <div class="btn">Bootstrap</div>
+                  <div class="btn">Django</div>
+                  <div class="btn">Flask</div>
+                  <div class="btn">Blender</div>
+                  <div class="btn">Redis</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="mb-2">
+            <h2 class="heading">Education</h2>
+            <div class="flex flex-row">
+              <section class="flex-1 ml-2">
+                <div class="flex flex-row">
+                  <div class="mb-2">
+                    <h3 class="heading2">B-Tech CSE Undergraduate</h3>
+                    <p class="subheading">BNM Institute Of Technology<text class="subsubheading">2020-present</text></p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="flex-1 ml-2">
+                <div class="flex flex-row">
+                  <div class="mb-2">
+                    <h3 class="heading2">Primary Education</h3>
+                    <p class="subheading">Delhi Public School <br> <text class="subsubheading">Bangalore North</text></p>
+                    <p class="text-xs text-gray-800 flex flex-col">
+                      <text><b>X</b>: 91.5%</text>
+                      <h3 class="heading2">Secondary Education</h3>
+                    <p class="subheading">Sri Chaitanya Techno School <br> <text class="subsubheading">Hebbal</text></p>
+                      <text><b>XII</b>: 87.5% (PCMC)</text>
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
